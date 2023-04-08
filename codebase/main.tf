@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_launch_configuration" "Clim-DM" {
   image_id        = "<AMI-ID>"
-  instance_type  = "t2.micro"
+  instance_type  = "t3.micro"
   security_groups = [aws_security_group.Clim-DM.id]
   user_data       = data.template_file.user_data.rendered
 }
