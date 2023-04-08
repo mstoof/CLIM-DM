@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CLIM - Eindopdracht Devon & Maurice</title>
+  </head>
+  <body>
+    <h1>CLIM - Eindopdracht Devon & Maurice</h1>
+    <h3>Choose one of the options below</h3>
+    <p><a href="/authenticated">Add Records</a></p>
+    <p><a href="/updaterecords">Update Records</a></p>
+    <p><a href="/removerecords">Remove Records</a></p>
+
+    <br>
+    <h2>Remove DNS records</h2>
+    <form action="/removerecords" method="post">
+      <label for="dns">DNS Name</label>
+      <input type="text" id="dnsname" name="dnsname"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
